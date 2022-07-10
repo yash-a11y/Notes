@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="left"
+    android:text="UPDATE NOTE"
+    android:textSize="21sp"
+    android:textStyle="bold"
+    android:textColor="#999999"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:hintTextColor="@color/black"
+        app:boxStrokeColor="#999999"
+        android:layout_marginTop="19dp"
+        >
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/updatetxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ENTER NOTE"
+            android:textSize="19sp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        >
+        <Button
+            android:id="@+id/updatebtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="update"
+            android:backgroundTint="#999999"
+           android:layout_marginRight="10dp"
+            android:textSize="11sp"
+            />
+
+        <Button
+
+            android:id="@+id/cancelbtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="cancel"
+            android:textSize="11sp"
+
+            android:backgroundTint="#999999"
+
+            />
+    </LinearLayout>
+</LinearLayout>
